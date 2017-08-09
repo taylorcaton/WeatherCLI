@@ -10,7 +10,7 @@ Weather.prototype.getWeather = function(location){
     weather.find({search: location, degreeType: 'F'}, function(err, result) {
         if(err) console.log(err);
         
-        console.log(JSON.stringify(result, null, 2));
+       return JSON.stringify(result, null, 2);
     });
 }
 
